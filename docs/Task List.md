@@ -1,0 +1,7 @@
+- [x] 1. 删除 `miniapp/uniCloud-aliyun` 遗留后端文件夹
+- [x] 2. 删除 `miniapp/unpackage` 编译产物
+- [x] 3. 删除 `miniapp/uni_modules` 中的 `uni-config-center` 和 `uni-id-common`
+- [x] 4. 清理 `miniapp/services` 下的 `http`、`store` 和 `utils` 冗余目录
+- [x] 5. 删除根目录下的 `migrate.js` 和 `migrate2.js` 脚本
+- [x] 6. 在 HBuilderX 中测试编译运行，确认无报错
+- [x] 7. 同步更新 `Task List.md` 到 `docs/` 目录中

@@ -1,0 +1,27 @@
+{
+  "name": "sign_wechat_program",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./tailwind-input.css -o ./static/tailwind.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "clipboard": "^2.0.11",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.13",
+    "lodash": "^4.17.21",
+    "pinia": "^3.0.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "tailwindcss": "^3.4.17",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sass": "^1.63.2",
+    "sass-loader": "^10.4.1"
+  }
+}

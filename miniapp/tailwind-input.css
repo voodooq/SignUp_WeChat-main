@@ -1,0 +1,11 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+.list > view + view {
+  margin-top: 8px; /* 2 = 0.5rem = 8px */
+}
+
+.s-x-2 > view + view {
+  margin-left: 8px; /* 2 = 0.5rem = 8px */
+}

@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # React 管理端 前端服务
+  frontend:
+    build: ./frontend
+    container_name: sign-frontend
+    ports:
+      - "9090:80"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - sign-network
+
+  # FastAPI 后端服务
+  backend:
+    build: ./backend
+    container_name: sign-backend
+    ports:
+      - "${SERVER_PORT:-8000}:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - upload_data:/app/uploads
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: always
+    networks:
+      - sign-network
+
+  # MongoDB 数据库
+  mongo:
+    image: mongo:7
+    container_name: sign-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d:ro
+    environment:
+      MONGO_INITDB_DATABASE: sign_wechat
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+    networks:
+      - sign-network
+
+volumes:
+  mongo_data:
+    driver: local
+  upload_data:
+    driver: local
+
+networks:
+  sign-network:
+    driver: bridge

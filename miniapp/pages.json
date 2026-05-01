@@ -1,0 +1,177 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "赛事详情",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/confirm",
+      "style": {
+        "navigationBarTitleText": "参赛须知",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/promise-personal",
+      "style": {
+        "navigationBarTitleText": "个人参赛承诺书",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/promise-health",
+      "style": {
+        "navigationBarTitleText": "健康安全承诺书",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/detail",
+      "style": {
+        "navigationBarTitleText": "比赛详情",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "赛事报名",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/result",
+      "style": {
+        "navigationBarTitleText": "报名结果",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/payment/payment",
+      "style": {
+        "navigationBarTitleText": "缴费",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/ticket/ticket",
+      "style": {
+        "navigationBarTitleText": "证书",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/score/score",
+      "style": {
+        "navigationBarTitleText": "成绩查询",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/gym/list",
+      "style": {
+        "navigationBarTitleText": "附近的岩馆",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/gym/detail",
+      "style": {
+        "navigationBarTitleText": "岩馆详情",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/route/detail",
+      "style": {
+        "navigationBarTitleText": "线路详情",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/live/competition",
+      "style": {
+        "navigationBarTitleText": "赛事直播",
+        "navigationBarBackgroundColor": "#000000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/event/detail",
+      "style": {
+        "navigationBarTitleText": "赛事详情",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/event/list",
+      "style": {
+        "navigationBarTitleText": "赛事列表",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/disclaimer/disclaimer",
+      "style": {
+        "navigationBarTitleText": "免责声明",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/assistant/assistant",
+      "style": {
+        "navigationBarTitleText": "赛事助手",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#9ca3af",
+    "selectedColor": "#2563eb",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/event/list",
+        "text": "赛事",
+        "iconPath": "static/tabbar/event.png",
+        "selectedIconPath": "static/tabbar/event_active.png"
+      },
+      {
+        "pagePath": "pages/gym/list",
+        "text": "岩馆",
+        "iconPath": "static/tabbar/gym.png",
+        "selectedIconPath": "static/tabbar/gym_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my_active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "赛事报名",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F5F5F5"
+  },
+  "uniIdRouter": {}
+}
