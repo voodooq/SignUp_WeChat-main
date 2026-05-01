@@ -81,3 +81,4 @@ docker-compose up -d --build
 ## 许可证
 
 本项目当前采用 `ISC` 协议（见 `package.json`）。如需更换为 `MIT`/`Apache-2.0`，请同步更新许可证文件与说明文档。
+
